@@ -28,6 +28,7 @@ container to reclaim that access.
 ## Attack path
 
 ​```
+
     A["Henry\nInitial access"] -->|WriteSPN / Kerberoast| B["Alfred"]
     
     B -->|AddSelf| C["Infrastructure\ngroup"]
@@ -44,3 +45,4 @@ container to reclaim that access.
     
     H -->|PKINIT + NT hash| I["DC01\nAdministrator shell"]
 ​```
+
