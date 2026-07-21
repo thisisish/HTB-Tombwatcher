@@ -1,7 +1,9 @@
 # TombWatcher — HackTheBox Writeup
 
-**Difficulty:** Medium\n
-**OS:** Windows (Active Directory)\n
+**Difficulty:** Medium
+
+**OS:** Windows (Active Directory)
+
 **Category:** Active Directory / ADCS
 
 ---
