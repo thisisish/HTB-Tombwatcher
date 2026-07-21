@@ -27,14 +27,20 @@ container to reclaim that access.
 
 ## Attack path
 
-​```mermaid
-flowchart TD
+​```
     A["Henry\nInitial access"] -->|WriteSPN / Kerberoast| B["Alfred"]
+    
     B -->|AddSelf| C["Infrastructure\ngroup"]
+    
     C -->|ReadGMSAPassword| D["Ansible_dev5\ngMSA"]
+    
     D -->|ForceChangePassword| E["Sam"]
+    
     E -->|GenericAll| F["John"]
+    
     F -->|WriteOwner + DACL write| G["cert_admin\nreanimated deleted object"]
+    
     G -->|Enrollment Agent cert\nESC3| H["Administrator\nvia certipy on-behalf-of"]
+    
     H -->|PKINIT + NT hash| I["DC01\nAdministrator shell"]
 ​```
