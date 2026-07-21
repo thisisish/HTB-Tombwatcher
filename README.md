@@ -45,3 +45,7 @@ container to reclaim that access.
     H --> |PKINIT + NT hash| --> I["DC01\nAdministrator shell"]
 ​
 
+
+<img width="16285" height="5420" alt="Tombwatcher" src="https://github.com/user-attachments/assets/13850d3c-1042-48cf-9b13-90a3a0f55f62" />
+
+
